@@ -55,6 +55,10 @@ typedef struct _Monster
 	int atk;
 } Monster;
 
+Monster Pig;
+Monster Slime;
+Monster Goblin;
+
 typedef struct _Weapon
 {
 	char name[NAME_SIZE];

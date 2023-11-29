@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include "main.h"
 
-void battleScene(int numberMap)
+void battleScene(int numberMap, char monsterName[NAME_SIZE], int monsterHp, int monsterAtk)
 {
 	int key = 0; // 방향키 입력을 확인하기 위한 변수
 	int pos = 0; // 0 - 공격하기, 1 - 주문 시전, 2 - 도망가기
@@ -53,7 +53,7 @@ void battleScene(int numberMap)
 	switch (pos)
 	{
 	case 0:
-
+		
 		break;
 	case 1:
 
@@ -71,9 +71,4 @@ void battleScene(int numberMap)
 		}
 	default: break;
 	}
-}
-
-void monsterDarkForest()
-{
-
 }

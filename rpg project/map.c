@@ -148,7 +148,7 @@ void DarkForest()
 {
 	int key = 0; // 방향키 입력을 확인하기 위한 변수
 	int pos = 0; // 0 - 탐색하기, 1 - 인벤토리, 2 - 마을로 돌아가기
-	char NameMenu[3][NAME_SIZE] = { "탐색하기","인벤토리","마을로 돌아가기" };
+	char NameMenu[3][NAME_SIZE] = { "탐험하기","인벤토리","마을로 돌아가기" };
 
 	numberMap = Loc_DarkForest; // '돌아가기' 를 선택하였을 때, 이전 맵으로 돌아가기 위해 현재 맵의 넘버를 저장
 
@@ -196,7 +196,18 @@ void DarkForest()
 	switch (pos)
 	{
 	case 0:
-		battleScene(numberMap);
+		gotoxy(25, 4);
+		printf("탐험하는중");
+		Sleep(400);
+		printf(".");
+		Sleep(400);
+		printf(".");
+		Sleep(400);
+		gotoxy(25, 4);
+		printf("            ");
+
+		srand((unsigned)time(NULL));
+		battleScene(numberMap, Pig.name, Pig.hp, Pig.atk);
 		break;
 	case 1:
 		system("cls");

@@ -78,7 +78,7 @@ void setmoveMap() // Move 의 메뉴를 전부 출력하는 함수
 void setDarkForest() // DarkForest 의 메뉴를 전부 출력하는 함수
 {
 	int NumberMenu = 0;
-	char NameMenu[3][NAME_SIZE] = { "탐색하기","인벤토리","마을로 돌아가기" };
+	char NameMenu[3][NAME_SIZE] = { "탐험하기","인벤토리","마을로 돌아가기" };
 
 	gotoxy(5, 10);
 	printf(" %s", NameMenu[NumberMenu++]);
