@@ -4,18 +4,26 @@ void playerStatsUI(int Player_hp, int Player_mp, int Player_atk, int Player_mtk)
 {
 	gotoxy(5, 3);
 	textcolor(GREEN);
+	printf("           ");
+	gotoxy(5, 3);
 	printf("HP : %d", Player_hp);
 
 	gotoxy(5, 4);
 	textcolor(BLUE);
+	printf("           ");
+	gotoxy(5, 4);
 	printf("MP : %d", Player_mp);
 
 	gotoxy(5, 5);
 	textcolor(DarkRed);
+	printf("           ");
+	gotoxy(5, 5);
 	printf("ATK : %d", Player_atk);
 
 	gotoxy(5, 6);
 	textcolor(SkyBlue);
+	printf("           ");
+	gotoxy(5, 6);
 	printf("MTK : %d", Player_mtk);
 
 	textcolor(WHITE);
@@ -78,7 +86,7 @@ void setmoveMap() // Move 의 메뉴를 전부 출력하는 함수
 void setDarkForest() // DarkForest 의 메뉴를 전부 출력하는 함수
 {
 	int NumberMenu = 0;
-	char NameMenu[3][NAME_SIZE] = { "탐색하기","인벤토리","마을로 돌아가기" };
+	char NameMenu[3][NAME_SIZE] = { "탐험하기","인벤토리","마을로 돌아가기" };
 
 	gotoxy(5, 10);
 	printf(" %s", NameMenu[NumberMenu++]);

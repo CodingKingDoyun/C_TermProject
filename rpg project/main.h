@@ -10,7 +10,6 @@
 #include "menu.h" // 메뉴에 관한 함수를 담은 헤더파일
 #include "map.h" // 맵을 생성하는 함수를 담은 헤더파일
 #include "battle.h" // 전투에 관한 함수를 담은 헤더파일
-#include "console.h" // 콘솔에 관한 함수를 담은 헤더파일
 
 #define NAME_SIZE 32 // 이름의 최대 크기 설정
 
@@ -53,11 +52,14 @@ typedef struct _Monster
 	char name[NAME_SIZE];
 	int hp;
 	int atk;
+	int mtk;
 } Monster;
 
-typedef struct _Weapon
-{
-	char name[NAME_SIZE];
-	int atk;
-} Weapon;
+Monster Pig;
+Monster Slime;
+Monster Goblin;
 
+
+void gotoxy(int x, int y);
+void SetConsole();
+void textcolor(int colorNum);

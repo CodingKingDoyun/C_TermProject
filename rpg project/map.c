@@ -126,17 +126,17 @@ void moveMap()
 
 	switch (pos)
 	{
-	case 0:
+	case 0: // 어두운 숲
 		system("cls");
 		DarkForest();
 		break;
-	case 1:
+	case 1: // 고요한 동굴
 		system("cls");
 		break;
-	case 2:
+	case 2: // 파괴된 유적
 		system("cls");
 		break;
-	case 3:
+	case 3: // 돌아가기
 		system("cls");
 		previousMap();
 		break;
@@ -148,7 +148,7 @@ void DarkForest()
 {
 	int key = 0; // 방향키 입력을 확인하기 위한 변수
 	int pos = 0; // 0 - 탐색하기, 1 - 인벤토리, 2 - 마을로 돌아가기
-	char NameMenu[3][NAME_SIZE] = { "탐색하기","인벤토리","마을로 돌아가기" };
+	char NameMenu[3][NAME_SIZE] = { "탐험하기","인벤토리","마을로 돌아가기" };
 
 	numberMap = Loc_DarkForest; // '돌아가기' 를 선택하였을 때, 이전 맵으로 돌아가기 위해 현재 맵의 넘버를 저장
 
@@ -196,8 +196,24 @@ void DarkForest()
 	switch (pos)
 	{
 	case 0:
-		battleScene(numberMap);
-		break;
+		gotoxy(30, 2);
+		printf("탐험하는중");
+		Sleep(400);
+		printf(".");
+		Sleep(400);
+		printf(".");
+		Sleep(400);
+		gotoxy(30, 2);
+		printf("            ");
+
+		srand(time(NULL));
+		int r = rand() % 100;
+		if (r <= 39) // 40% 확률로 돼지가 나옴
+			battleScene(numberMap, Pig.name, Pig.hp, Pig.atk, Pig.mtk, r); // 돼지
+		else if (r <= 69) // 30% 확률로 슬라임이 나옴
+			battleScene(numberMap, Slime.name, Slime.hp, Slime.atk, Slime.mtk, r); // 슬라임
+		else // 30% 확률로 고블린이 나옴
+			battleScene(numberMap, Goblin.name, Goblin.hp, Goblin.atk, Goblin.mtk, r); // 고블린
 	case 1:
 		system("cls");
 		break;
@@ -211,7 +227,7 @@ void DarkForest()
 
 void previousMap() // 이전 맵으로 돌아가는 함수
 {
-	switch (numberMap)
+	switch (numberMap) // 이전 맵의 번호를 확인하여 해당하는 넘버의 맵으로 돌아감
 	{
 	case 0:
 		Town();
