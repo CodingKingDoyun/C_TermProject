@@ -1,3 +1,5 @@
+#pragma once
+
 /* https://blog.naver.com/ifthe1201/221056588399 링크에 있는 1번(모듈화를 위한 헤더 세팅)을 인용함 */
 #include <stdio.h>
 #include <stdlib.h>
@@ -9,7 +11,6 @@
 // 사용자 정의 헤더파일
 #include "menu.h" // 메뉴에 관한 함수를 담은 헤더파일
 #include "map.h" // 맵을 생성하는 함수를 담은 헤더파일
-#include "battle.h" // 전투에 관한 함수를 담은 헤더파일
 
 #define NAME_SIZE 32 // 이름의 최대 크기 설정
 
@@ -45,6 +46,7 @@ struct _Player
 	int mp;
 	int atk;
 	int mtk;
+	int gold;
 } Player;
 
 typedef struct _Monster

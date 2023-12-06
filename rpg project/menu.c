@@ -58,7 +58,7 @@ void selectMenu(char NameMenu[]) // 선택한 메뉴를 표시해주는 함수
 void setTown() // Town 의 메뉴를 전부 출력하는 함수
 {
 	int NumberMenu = 0;
-	char NameMenu[3][NAME_SIZE] = { "이동하기","인벤토리","휴식하기" };
+	char NameMenu[3][NAME_SIZE] = { "이동하기","상점가기","휴식하기" };
 
 	gotoxy(5, 10);
 	printf(" %s", NameMenu[NumberMenu++]);

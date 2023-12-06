@@ -29,19 +29,14 @@ void inventory()
 	gotoxy(25, 5);
 }
 
-void rest()
-{
-	Player.hp = 100;
-	Player.mp = 100;
-}
-
 int main()
 {
 	// 플레이어의 초기 스텟 초기화
 	Player.hp = 100;
-	Player.mp = 100;
+	Player.mp = 30;
 	Player.atk = 5;
 	Player.mtk = 8;
+	Player.gold = 0;
 
 	strcpy(Pig.name, "돼지");
 	Pig.hp = 6;
@@ -49,13 +44,13 @@ int main()
 	Pig.mtk = 0;
 
 	strcpy(Slime.name, "슬라임");
-	Slime.hp = 10;
-	Slime.atk = 3;
+	Slime.hp = 15;
+	Slime.atk = 4;
 	Slime.mtk = 0;
 
 	strcpy(Goblin.name, "고블린");
-	Goblin.hp = 16;
-	Goblin.atk = 5;
+	Goblin.hp = 25;
+	Goblin.atk = 8;
 	Goblin.mtk = 0;
 
 	SetConsole();
