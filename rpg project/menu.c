@@ -115,11 +115,11 @@ void setTown() // Town 의 메뉴를 전부 출력하는 함수
 	printf("현재 위치 : 마을");
 
 	gotoxy(5, 10);
-	printf(" %s", NameMenu[NumberMenu++]);
+	printf(" %s ", NameMenu[NumberMenu++]);
 	gotoxy(5, 15);
-	printf(" %s", NameMenu[NumberMenu++]);
+	printf(" %s ", NameMenu[NumberMenu++]);
 	gotoxy(5, 20);
-	printf(" %s", NameMenu[NumberMenu++]);
+	printf(" %s ", NameMenu[NumberMenu++]);
 }
 
 void setShop() // Shop 의 메뉴를 전부 출력하는 함수
@@ -128,11 +128,11 @@ void setShop() // Shop 의 메뉴를 전부 출력하는 함수
 	char NameMenu[3][NAME_SIZE] = { "강화 물약 구매","주문 구매","마을로 돌아가기" };
 
 	gotoxy(5, 10);
-	printf(" %s", NameMenu[NumberMenu++]);
+	printf(" %s ", NameMenu[NumberMenu++]);
 	gotoxy(5, 15);
-	printf(" %s", NameMenu[NumberMenu++]);
+	printf(" %s ", NameMenu[NumberMenu++]);
 	gotoxy(5, 20);
-	printf(" %s", NameMenu[NumberMenu++]);
+	printf(" %s ", NameMenu[NumberMenu++]);
 }
 
 void setbuyPotion()
@@ -143,35 +143,35 @@ void setbuyPotion()
 
 	gotoxy(30, 10);
 	textcolor(GREEN);
-	printf(" %s", NameMenu[NumberMenu]);
+	printf(" %s ", NameMenu[NumberMenu]);
 	gotoxy(30, 11);
 	textcolor(YELLOW);
-	printf(" %d Gold ", PotionPrice[NumberMenu++]);
+	printf(" %d Gold  ", PotionPrice[NumberMenu++]);
 
 	gotoxy(30, 15);
 	textcolor(BLUE);
-	printf(" %s", NameMenu[NumberMenu]);
+	printf(" %s ", NameMenu[NumberMenu]);
 	gotoxy(30, 16);
 	textcolor(YELLOW);
-	printf(" %d Gold ", PotionPrice[NumberMenu++]);
+	printf(" %d Gold  ", PotionPrice[NumberMenu++]);
 
 	gotoxy(30, 20);
 	textcolor(DarkRed);
-	printf(" %s", NameMenu[NumberMenu]);
+	printf(" %s ", NameMenu[NumberMenu]);
 	gotoxy(30, 21);
 	textcolor(YELLOW);
-	printf(" %d Gold ", PotionPrice[NumberMenu++]);
+	printf(" %d Gold  ", PotionPrice[NumberMenu++]);
 
 	gotoxy(30, 25);
 	textcolor(SkyBlue);
-	printf(" %s", NameMenu[NumberMenu]);
+	printf(" %s ", NameMenu[NumberMenu]);
 	gotoxy(30, 26);
 	textcolor(YELLOW);
-	printf(" %d Gold ", PotionPrice[NumberMenu++]);
+	printf(" %d Gold  ", PotionPrice[NumberMenu++]);
 
 	gotoxy(30, 30);
 	textcolor(WHITE);
-	printf(" %s", NameMenu[NumberMenu]);
+	printf(" %s ", NameMenu[NumberMenu]);
 }
 
 void setbuySpell()
@@ -184,59 +184,59 @@ void setbuySpell()
 	{
 		gotoxy(30, 10);
 		textcolor(DarkGray);
-		printf(" %s", NameMenu[NumberMenu++]);
+		printf(" %s ", NameMenu[NumberMenu++]);
 		gotoxy(30, 11);
-		printf(" 이미 습득한 주문입니다.. ");
+		printf(" 이미 습득한 주문입니다..  ");
 	}
 	else
 	{
 		gotoxy(30, 10);
 		textcolor(RED);
-		printf(" %s", NameMenu[NumberMenu]);
+		printf(" %s ", NameMenu[NumberMenu]);
 		gotoxy(30, 11);
 		textcolor(YELLOW);
-		printf(" %d Gold ", SpellPrice[NumberMenu++]);
+		printf(" %d Gold  ", SpellPrice[NumberMenu++]);
 	}
 
 	if (FireStorm)
 	{
 		gotoxy(30, 15);
 		textcolor(DarkGray);
-		printf(" %s", NameMenu[NumberMenu++]);
+		printf(" %s ", NameMenu[NumberMenu++]);
 		gotoxy(30, 16);
-		printf(" 이미 습득한 주문입니다.. ");
+		printf(" 이미 습득한 주문입니다..  ");
 	}
 	else
 	{
 		gotoxy(30, 15);
 		textcolor(RED);
-		printf(" %s", NameMenu[NumberMenu]);
+		printf(" %s ", NameMenu[NumberMenu]);
 		gotoxy(30, 16);
 		textcolor(YELLOW);
-		printf(" %d Gold ", SpellPrice[NumberMenu++]);
+		printf(" %d Gold  ", SpellPrice[NumberMenu++]);
 	}
 
 	if (HellFire)
 	{
 		gotoxy(30, 20);
 		textcolor(DarkGray);
-		printf(" %s", NameMenu[NumberMenu++]);
+		printf(" %s ", NameMenu[NumberMenu++]);
 		gotoxy(30, 21);
-		printf(" 이미 습득한 주문입니다.. ");
+		printf(" 이미 습득한 주문입니다..  ");
 	}
 	else
 	{
 		gotoxy(30, 20);
 		textcolor(RED);
-		printf(" %s", NameMenu[NumberMenu]);
+		printf(" %s ", NameMenu[NumberMenu]);
 		gotoxy(30, 21);
 		textcolor(YELLOW);
-		printf(" %d Gold ", SpellPrice[NumberMenu++]);
+		printf(" %d Gold  ", SpellPrice[NumberMenu++]);
 	}
 
 	gotoxy(30, 25);
 	textcolor(WHITE);
-	printf(" %s", NameMenu[NumberMenu]);
+	printf(" %s ", NameMenu[NumberMenu]);
 }
 
 void setmoveMap() // Move 의 메뉴를 전부 출력하는 함수
@@ -245,13 +245,13 @@ void setmoveMap() // Move 의 메뉴를 전부 출력하는 함수
 	char NameMenu[4][NAME_SIZE] = { "어두운 숲","고요한 동굴","파괴된 유적","돌아가기" };
 
 	gotoxy(5, 10);
-	printf(" %s", NameMenu[NumberMenu++]);
+	printf(" %s ", NameMenu[NumberMenu++]);
 	gotoxy(5, 15);
-	printf(" %s", NameMenu[NumberMenu++]);
+	printf(" %s ", NameMenu[NumberMenu++]);
 	gotoxy(5, 20);
-	printf(" %s", NameMenu[NumberMenu++]);
+	printf(" %s ", NameMenu[NumberMenu++]);
 	gotoxy(5, 25);
-	printf(" %s", NameMenu[NumberMenu++]);
+	printf(" %s ", NameMenu[NumberMenu++]);
 }
 
 void setDarkForest() // DarkForest 의 메뉴를 전부 출력하는 함수
@@ -264,9 +264,9 @@ void setDarkForest() // DarkForest 의 메뉴를 전부 출력하는 함수
 	printf("현재 위치 : 어두운 숲");
 
 	gotoxy(5, 10);
-	printf(" %s", NameMenu[NumberMenu++]);
+	printf(" %s ", NameMenu[NumberMenu++]);
 	gotoxy(5, 15);
-	printf(" %s", NameMenu[NumberMenu++]);
+	printf(" %s ", NameMenu[NumberMenu++]);
 }
 
 void setSilentCave()
@@ -279,9 +279,9 @@ void setSilentCave()
 	printf("현재 위치 : 고요한 동굴");
 
 	gotoxy(5, 10);
-	printf(" %s", NameMenu[NumberMenu++]);
+	printf(" %s ", NameMenu[NumberMenu++]);
 	gotoxy(5, 15);
-	printf(" %s", NameMenu[NumberMenu++]);
+	printf(" %s ", NameMenu[NumberMenu++]);
 }
 
 void setDestroyedRuins()
@@ -294,9 +294,9 @@ void setDestroyedRuins()
 	printf("현재 위치 : 파괴된 유적");
 
 	gotoxy(5, 10);
-	printf(" %s", NameMenu[NumberMenu++]);
+	printf(" %s ", NameMenu[NumberMenu++]);
 	gotoxy(5, 15);
-	printf(" %s", NameMenu[NumberMenu++]);
+	printf(" %s ", NameMenu[NumberMenu++]);
 }
 
 void setBattleScene() // BattleScene 의 메뉴를 전부 출력하는 함수
@@ -305,11 +305,11 @@ void setBattleScene() // BattleScene 의 메뉴를 전부 출력하는 함수
 	char NameMenu[3][NAME_SIZE] = { "공격하기","주문시전","도망가기" };
 
 	gotoxy(30, 10);
-	printf(" %s", NameMenu[NumberMenu++]);
+	printf(" %s ", NameMenu[NumberMenu++]);
 	gotoxy(30, 15);
-	printf(" %s", NameMenu[NumberMenu++]);
+	printf(" %s ", NameMenu[NumberMenu++]);
 	gotoxy(30, 20);
-	printf(" %s", NameMenu[NumberMenu++]);
+	printf(" %s ", NameMenu[NumberMenu++]);
 }
 
 void setSpell()
@@ -321,10 +321,10 @@ void setSpell()
 	// 파이어 볼
 	gotoxy(55, 10);
 	textcolor(DarkRed);
-	printf(" %s ", NameMenu[NumberMenu]);
+	printf(" %s  ", NameMenu[NumberMenu]);
 	gotoxy(55, 11);
 	textcolor(SkyBlue);
-	printf(" %d MP ", needMp[NumberMenu++]);
+	printf(" %d MP  ", needMp[NumberMenu++]);
 
 	// 파이어 캐논
 	gotoxy(55, 15);
@@ -334,12 +334,12 @@ void setSpell()
 		printf(" %s ", NameMenu[NumberMenu]);
 		gotoxy(55, 16);
 		textcolor(SkyBlue);
-		printf(" %d MP ", needMp[NumberMenu++]);
+		printf(" %d MP  ", needMp[NumberMenu++]);
 	}
 	else
 	{
 		textcolor(DarkGray);
-		printf(" %s ", NameMenu[NumberMenu++]);
+		printf(" %s  ", NameMenu[NumberMenu++]);
 	}
 
 	// 파이어 스톰
@@ -347,15 +347,15 @@ void setSpell()
 	if (FireStorm)
 	{
 		textcolor(DarkRed);
-		printf(" %s ", NameMenu[NumberMenu]);
+		printf(" %s  ", NameMenu[NumberMenu]);
 		gotoxy(55, 21);
 		textcolor(SkyBlue);
-		printf(" %d MP ", needMp[NumberMenu++]);
+		printf(" %d MP  ", needMp[NumberMenu++]);
 	}
 	else
 	{
 		textcolor(DarkGray);
-		printf(" %s ", NameMenu[NumberMenu++]);
+		printf(" %s  ", NameMenu[NumberMenu++]);
 	}
 
 	// 헬파이어
@@ -363,20 +363,20 @@ void setSpell()
 	if (HellFire)
 	{
 		textcolor(DarkRed);
-		printf(" %s ", NameMenu[NumberMenu]);
+		printf(" %s  ", NameMenu[NumberMenu]);
 		gotoxy(55, 26);
 		textcolor(SkyBlue);
-		printf(" %d MP ", needMp[NumberMenu++]);
+		printf(" %d MP  ", needMp[NumberMenu++]);
 	}
 	else
 	{
 		textcolor(DarkGray);
-		printf(" %s ", NameMenu[NumberMenu++]);
+		printf(" %s  ", NameMenu[NumberMenu++]);
 	}
 
 	gotoxy(55, 30);
 	textcolor(WHITE);
-	printf(" %s", NameMenu[NumberMenu++]);
+	printf(" %s ", NameMenu[NumberMenu++]);
 }
 
 /* 앞으로 나오는 함수들은 모두 https://blog.naver.com/ifthe1201/221056588399 링크에 있는 3번(메뉴를 선택하자!)을 인용함
